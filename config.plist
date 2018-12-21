@@ -669,7 +669,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelHDGraphicsFB</string>
 				<key>Replace</key>
-				<data>geH//8f/gckAAAAAkJCQkJBBiU5siYgMAA8AQYtWaIHi///H/4HKAAAAAJCQkJCQkJCQkJA=</data>
+				<data>u///x/+6AAAAACHZCdFBiU5sSYuEJJgAAACJiAwADwBBi05oIdkJ0YnKkJCQSYuMJJgGAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -685,7 +685,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelHDGraphicsFB</string>
 				<key>Replace</key>
-				<data>geH//8f/gckAAAgAkJCQkJBBiU5siYgMAA8AQYtWaIHi///H/4HKAAAIAJCQkJCQkJCQkJA=</data>
+				<data>u///x/+6AAAIACHZCdFBiU5sSYuEJJgAAACJiAwADwBBi05oIdkJ0YnKkJCQSYuMJJgGAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -701,7 +701,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelHDGraphicsFB</string>
 				<key>Replace</key>
-				<data>geH//8f/gckAABAAkJCQkJBBiU5siYgMAA8AQYtWaIHi///H/4HKAAAQAJCQkJCQkJCQkJA=</data>
+				<data>u///x/+6AAAQACHZCdFBiU5sSYuEJJgAAACJiAwADwBBi05oIdkJ0YnKkJCQSYuMJJgGAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -717,7 +717,7 @@
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelHDGraphicsFB</string>
 				<key>Replace</key>
-				<data>geH//8f/gckAABgAkJCQkJBBiU5siYgMAA8AQYtWaIHi///H/4HKAAAYAJCQkJCQkJCQkJA=</data>
+				<data>u///x/+6AAAYACHZCdFBiU5sSYuEJJgAAACJiAwADwBBi05oIdkJ0YnKkJCQSYuMJJgGAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
