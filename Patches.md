@@ -469,33 +469,26 @@ mov dword [rax+0xF000C], esi
 or  edx, dword [r14+0x68]
 ```
 
-LW1: `81E1FFFFC7FF81C900000000909090909041894E6C89880C000F00418B566881E2FFFFC7FF81CA0000000090909090909090909090`  
-LW2: `81E1FFFFC7FF81C900000800909090909041894E6C89880C000F00418B566881E2FFFFC7FF81CA0000080090909090909090909090`  
-LW3: `81E1FFFFC7FF81C900001000909090909041894E6C89880C000F00418B566881E2FFFFC7FF81CA0000100090909090909090909090`  
-LW4: `81E1FFFFC7FF81C900001800909090909041894E6C89880C000F00418B566881E2FFFFC7FF81CA0000180090909090909090909090`
+LW1: `BBFFFFC7FFBA0000000021D909D141894E6C498B84249800000089880C000F00418B4E6821D909D189CA909090498B8C2498060000`  
+LW2: `BBFFFFC7FFBA0000080021D909D141894E6C498B84249800000089880C000F00418B4E6821D909D189CA909090498B8C2498060000`  
+LW3: `BBFFFFC7FFBA0000100021D909D141894E6C498B84249800000089880C000F00418B4E6821D909D189CA909090498B8C2498060000`  
+LW4: `BBFFFFC7FFBA0000180021D909D141894E6C498B84249800000089880C000F00418B4E6821D909D189CA909090498B8C2498060000`
 ```asm
-and ecx, 0xFFC7FFFF        ; Clear link width.
-or  ecx, X                 ; Set link width ((link_width - 1) & 7) << 19.
-nop 
+mov ebx, 0xFFC7FFFF        ; Store pattern for clearing link width.
+mov edx, X                 ; Store link width ((link_width - 1) & 7) << 19.
+and ecx, ebx               ; Clear link width.
+or  ecx, edx               ; Set link width.
+mov dword [r14+0x6C], ecx  ; Set FDI_RXA_CTL register.
+mov rax, qword [r12+0x98]
+mov dword [rax+0xF000C], ecx
+mov ecx, dword [r14+0x68]  ; Get FDI_TXA_CTL register.
+and ecx, ebx               ; Clear link width.
+or  ecx, edx               ; Set link width.
+mov edx, ecx               ; FDI_TXA_CTL register will be set from edx.
 nop
 nop
 nop
-nop
-mov dword [r14+0x6c], ecx  ; Set FDI_RXA_CTL register.
-mov dword [rax+0xf000c], ecx
-mov edx, dword [r14+0x68]  ; Get FDI_TXA_CTL register.
-and edx, 0xFFC7FFFF        ; Clear link width.
-or  edx, X                 ; Set link width ((link_width - 1) & 7) << 19.
-nop
-nop
-nop
-nop
-nop
-nop
-nop
-nop
-nop
-nop
+mov rcx, qword [r12+0x698]
 ```
 
 
