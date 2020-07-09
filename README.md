@@ -20,7 +20,9 @@ in the WhateverGreen manual for full details.
 
 To enable patching, add `framebuffer-patch-enable` under your iGPU device in the config.plist. For displays that are
 1366x768, or as needed, you may need to enable single link mode and set the link width with `framebuffer-singlelink` and/or `framebuffer-linkwidth`.
-`framebuffer-linkwidth` defaults to a link width of `1`. All properties should be in proper 32-bit data `<XXXXXXXX>` format.
+`framebuffer-linkwidth` defaults to a link width of `1`.
+
+All properties should be in proper 32-bit data `<XXXXXXXX>` format.
 
 ## Installation
 Install macOS as normal.
