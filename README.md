@@ -8,11 +8,10 @@ manual kext patches, please use it. For older versions of the OS, the old instru
 ## Requirements
 * Laptop with first generation Intel HD Graphics that uses an LVDS-connected display (eDP is unsupported). Desktop systems cannot be used.  
 * Mac OS X 10.8.x to macOS 10.13.x.
-* [OpenCore](https://github.com/acidanthera/OpenCorePkg)
+* [OpenCore](https://github.com/acidanthera/OpenCorePkg) (0.6.0 or higher)
 * [Lilu](https://github.com/acidanthera/Lilu)
-* [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
-* SMBIOS set to MacBookPro6,1 or MacBookPro6,2 (this will require manually recompiling OpenCore after modifying
-[this](https://github.com/acidanthera/OpenCorePkg/blob/master/AppleModels/update_generated.py#L305) line to include 2010 and higher, and rerunning the script prior to rebuilding.
+* [WhateverGreen](https://github.com/acidanthera/WhateverGreen) (1.4.1 or higher)
+* SMBIOS set to MacBookPro6,1 or MacBookPro6,2
 
 ## Configuration
 Refer to [this](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.IntelHD.en.md#intel-hd-graphics-first-generation--ironlake-arrandale-processors) section
